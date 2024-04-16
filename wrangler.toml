@@ -1,7 +1,7 @@
 name = "orange-meets"
 # https://developers.cloudflare.com/workers/platform/compatibility-dates
 compatibility_date = "2022-04-05"
-account_id = "a67e14daa5f8dceeb91fe5449ba496eb"
+account_id = "28da29ae062b39fc5e2a57abbbbad986"
 main = "./build/index.js"
 
 [site]
@@ -12,7 +12,7 @@ main = "./build/index.js"
   globs = ["**/*.js"]
 
 [vars]
-CALLS_APP_ID = "f0ea263009299383d09d44b9fad5316c"
+CALLS_APP_ID = "eb11fed8dd7054f32f5e553989171eee"
 
 [durable_objects]
  bindings = [
@@ -25,5 +25,5 @@ tag = "v1" # Should be unique for each entry
 new_classes = ["ChatRoom"]
 
 # The necessary secrets are:
-# - CALLS_APP_SECRET
+CALLS_APP_SECRET = "51b8c7aafe169ecc5a037802c4f7ad14fa98398d3a67016c57d68dd36261073d"
 # To add secret, run `echo <VALUE> | wrangler secret put <NAME>`
